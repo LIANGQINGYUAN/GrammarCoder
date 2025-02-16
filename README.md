@@ -9,8 +9,9 @@ Figure 1 illustrates a program that determines whether the sum of two integers i
 
 <figure>
     <img src="images/grammar_example.png" alt="Grammar Example" width="600">
-    <figcaption>Figure 1: Grammar-based code representation example.</figcaption>
 </figure>
+
+> Figure 1: Grammar-based code representation example.
 
 ## Grammar-Coder Training
 We propose GrammarCoder, a grammar-based model built on a decoder-only architecture, which excels in auto-regressive tasks like code generation, completion, and translation. To enhance its ability of code generation, we apply continued pre-training and instruction tuning on existing code model weights (i.e., DeepSeek-Coder-1.3B-Base and Qwen2.5-1.5B-Base), expanding its knowledge base.Table 1 provides the configuration of the base model we used.
@@ -24,7 +25,7 @@ We propose GrammarCoder, a grammar-based model built on a decoder-only architect
 | **# attention_head**    | 16               | 12          |
 | **# vocabulary**        | 32,256           | 151,936     |
 
-*Table 1: The main configuration of two different base models.*
+> Table 1: The main configuration of two different base models.
 
 We organize our training corpus in two stages: base model training and instruction tuning. 
 Python is selected as the primary programming language for data collection, as its rich syntax and widespread use in diverse programming paradigms make it an ideal candidate for evaluating the effectiveness of grammar-based representations. 
@@ -49,7 +50,7 @@ Compared with the model with the same experiment setting, Grammar-coder gained a
 | **GrammarCoder-1.3B-Base**         | **63.4**     | 57.3          | **68.3** | **56.9** |
 | **GrammarCoder-1.5B-Base**         | **63.4**     | **59.1**      | 64.8    | 55.3    |
 
-*Table 2: Comparison of code generation performance between token-based and grammar-based models. The CPT refers to continued pre-training, while the SFT denotes supervised fine-tuning for instruction-based learning.*
+> Table 2: Comparison of code generation performance between token-based and grammar-based models. The CPT refers to continued pre-training, while the SFT denotes supervised fine-tuning for instruction-based learning.
 
 
 
@@ -76,6 +77,6 @@ Compared with the model with the same experiment setting, Grammar-coder gained a
 | **GrammarCoder-1.3B-Instruct**     | 70.7         | 64.0          | 71.2    | 58.7    |
 | **GrammarCoder-1.5B-Instruct**     | **73.2**     | **68.3**      | **73.3** | 61.1    |
 
-*Table 3: Code generation accuracy on HumanEval(+) and MBPP(+).*
+> Table 3: Code generation accuracy on HumanEval(+) and MBPP(+).
 
 The model has been open-sourced, and the model and the corresponding tokenizer are stored [here](./Models/). These models are stored with the huggingface format.
