@@ -1,0 +1,31 @@
+[5501, 6923, 264, 10135, 729, 369, 847, 3491, 382, 8420, 374, 847, 3491, 510, 20154, 22079, 510, 7985, 264, 729, 311, 1477, 279, 6094, 5424, 504, 279, 2661, 1378, 11469, 624, 20154, 3393, 46024, 510, 2207, 738, 47760, 3569, 22801, 1188, 18, 11, 220, 19, 11, 220, 20, 11, 220, 21, 23547, 20, 11, 220, 22, 11, 220, 19, 11, 220, 16, 15, 7705, 621, 738, 1188, 19, 11, 220, 20, 1171, 2207, 738, 47760, 3569, 22801, 1188, 16, 11, 220, 17, 11, 220, 18, 11, 220, 19, 23547, 20, 11, 220, 19, 11, 220, 18, 11, 220, 22, 7705, 621, 738, 1188, 18, 11, 220, 19, 1171, 2207, 738, 47760, 3569, 22801, 1188, 16, 16, 11, 220, 16, 17, 11, 220, 16, 19, 11, 220, 16, 18, 23547, 16, 22, 11, 220, 16, 20, 11, 220, 16, 19, 11, 220, 16, 18, 7705, 621, 738, 1188, 16, 18, 11, 220, 16, 19, 4390, 2452, 4615, 5949, 510, 73594, 12669, 198, 151667, 152526, 151750]
+Please generate a python function for my problem.
+
+Here is my problem:
+>>> Problem:
+Write a function to find the shared elements from the given two lists.
+>>> Test Cases:
+assert set(similar_elements((3, 4, 5, 6),(5, 7, 4, 10))) == set((4, 5))
+assert set(similar_elements((1, 2, 3, 4),(5, 4, 3, 7))) == set((3, 4))
+assert set(similar_elements((11, 12, 14, 13),(17, 15, 14, 13))) == set((13, 14))
+
+>> Your Response:
+```python
+start -> pythonpython -> module_py module_py -> function_definition_py
+INFO 02-16 16:30:29 config.py:350] This model supports multiple tasks: {'generate', 'embedding'}. Defaulting to 'generate'.
+INFO 02-16 16:30:29 llm_engine.py:249] Initializing an LLM engine (v0.6.4.post1) with config: model='../../../Models/GrammarCoder-1.5B-Instruct', speculative_config=None, tokenizer='../../../Models/GrammarCoder-1.5B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=../../../Models/GrammarCoder-1.5B-Instruct, num_scheduler_steps=1, chunked_prefill_enabled=False multi_step_stream_outputs=True, enable_prefix_caching=False, use_async_output_proc=True, use_cached_outputs=False, chat_template_text_format=string, mm_processor_kwargs=None, pooler_config=None)
+INFO 02-16 16:30:30 selector.py:135] Using Flash Attention backend.
+INFO 02-16 16:30:31 model_runner.py:1072] Starting to load model ../../../Models/GrammarCoder-1.5B-Instruct...
+INFO 02-16 16:30:33 model_runner.py:1077] Loading model weights took 2.9129 GB
+INFO 02-16 16:30:33 worker.py:232] Memory profiling results: total_gpu_memory=79.15GiB initial_memory_usage=3.54GiB peak_torch_memory=4.32GiB memory_usage_post_profile=3.57GiB non_torch_memory=0.65GiB kv_cache_size=59.93GiB gpu_memory_utilization=0.82
+INFO 02-16 16:30:33 gpu_executor.py:113] # GPU blocks: 140266, # CPU blocks: 9362
+INFO 02-16 16:30:33 gpu_executor.py:117] Maximum concurrency for 4096 tokens per request: 547.91x
+INFO 02-16 16:30:36 model_runner.py:1400] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 02-16 16:30:36 model_runner.py:1404] If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 02-16 16:30:46 model_runner.py:1518] Graph capturing finished in 10 secs, took 0.78 GiB
+Load from ground-truth from /root/.cache/evalplus/ee43ecabebf20deef4bb776a405ac5b1.pkl
+Reading samples...
+mbpp (base tests)
+pass@1:	0.733
+mbpp+ (base + extra tests)
+pass@1:	0.611
