@@ -30,7 +30,7 @@ We propose GrammarCoder, a grammar-based model built on a decoder-only architect
 We organize our training corpus in two stages: base model training and instruction tuning. 
 Python is selected as the primary programming language for data collection, as its rich syntax and widespread use in diverse programming paradigms make it an ideal candidate for evaluating the effectiveness of grammar-based representations. 
 
-For base model training, we sample 10B tokens of Python code from TheStackV2dataset as the primary training data. Additionally, inspired by previous studies, we sample 0.5B tokens of self-contained code textbooks from open-source datasets~\cite{opencoder, nakamura2025aurora} to enhance the model’s adaptability to real-world interactive scenarios, bridging the gap between standard pre-training and practical applications. 
+For base model training, we sample 10B tokens of Python code from TheStackV2dataset as the primary training data. Additionally, inspired by previous studies, we sample 0.5B tokens of self-contained code textbooks from open-source datasets to enhance the model’s adaptability to real-world interactive scenarios, bridging the gap between standard pre-training and practical applications. 
 
 For instruction tuning, we leverage publicly available instruction datasets and employ the data synthesis approach to collect a total of 6B tokens of instruction data. This ensures the model is better aligned with instruction-following tasks, improving its ability to handle real-world programming scenarios.  Table 2 provides detailed information about the training datasets.
 
