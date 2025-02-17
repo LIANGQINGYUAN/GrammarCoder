@@ -14,7 +14,7 @@ Figure 1 illustrates a program that determines whether the sum of two integers i
 > Figure 1: Grammar-based code representation example.
 
 ## Grammar-Coder Training
-We propose GrammarCoder, a grammar-based model built on a decoder-only architecture, which excels in auto-regressive tasks like code generation, completion, and translation. To enhance its ability of code generation, we apply continued pre-training and instruction tuning on existing code model weights (i.e., DeepSeek-Coder-1.3B-Base and Qwen2.5-1.5B-Base), expanding its knowledge base.Table 1 provides the configuration of the base model we used.
+We propose GrammarCoder, a grammar-based model built on a decoder-only architecture, which excels in auto-regressive tasks like code generation, completion, and translation. To enhance its ability of code generation, we apply continued pre-training and instruction tuning on existing code model weights (i.e., DeepSeek-Coder-1.3B-Base and Qwen2.5-1.5B-Base), expanding its knowledge base. Table 1 provides the configuration of the base model we used.
 
 | **Config**              | **DeepSeek-Coder** | **Qwen2.5** |
 |-------------------------|------------------:|------------:|
@@ -79,4 +79,4 @@ Compared with the model with the same experiment setting, Grammar-coder gained a
 
 > Table 3: Code generation accuracy on HumanEval(+) and MBPP(+).
 
-The model has been open-sourced, and the model and the corresponding tokenizer are stored [here](./Models/). These models are stored with the huggingface format.
+The model has been open-sourced, and the model and the corresponding tokenizer are stored [here](https://drive.google.com/drive/folders/1LqRLiG8hw8kibTBThtQSsqR1yOneKFZ-?usp=drive_link). These models are stored in the huggingface format.
