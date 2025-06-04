@@ -7,7 +7,7 @@ GrammarCoder integrates grammar-based code representation into billion-scale lan
  - We upload our model weights to Hugging Face-[GrammarCoder](https://huggingface.co/collections/qyliang/grammarcoder-683fe8778270d31b08fe54a4). 
 
 ## Grammar-Based Code Representation
-Under grammar-based representation, each grammar rule serves as an identity token, and a sequence of grammar rules and terminal tokens represents the program. 
+Under a grammar-based representation, each grammar rule serves as an identity token, and a sequence of grammar rules and terminal tokens represents the program. 
 
 Figure 1 illustrates a program that determines whether the sum of two integers is odd (top left), along with its corresponding abstract syntax tree (AST) representation (right) and grammar-based representation (bottom left). The grammar-based representation is derived by performing a preorder traversal on the AST. Each grammar rule is extracted independently (e.g., 'module $\rightarrow$ function\_definition'), while terminals are tokenized using a standard tokenizer (e.g., 'get').
 
@@ -47,6 +47,7 @@ Compared with the model with the same experiment setting, Grammar-coder gained a
 | **Base Models**                    |              |               |         |         |
 | DeepSeek-Coder-1.3B-Base           | 34.8         | 28.7          | 56.7    | 47.9    |
 | Qwen2.5-1.5B-Base                  | 37.2         | 32.9          | 60.2    | 49.6    |
+| Qwen2.5-7B-Base                  | 57.9         | 50.6          | 74.9    | 62.9    |
 | **Normal Token-Based CPT**         |              |               |         |         |
 | DeepSeek-Coder-1.3B-Base (CPT)     | 43.9         | 39.6          | 61.4    | 51.3    |
 | Qwen2.5-1.5B-Base (CPT)            | 50.6         | 42.7          | 60.3    | 51.1    |
