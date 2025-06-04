@@ -87,3 +87,7 @@ Compared with the model with the same experiment setting, Grammar-coder gained a
 > Table 3: Code generation accuracy on HumanEval(+) and MBPP(+).
 
 The model has been open-sourced, and the model and the corresponding tokenizer are stored in HuggingFace-[GrammarCoder](https://huggingface.co/collections/qyliang/grammarcoder-683fe8778270d31b08fe54a4). 
+
+# Requirements
+- tree_sitter: 0.23.2
+- tree_sitter_python: 0.23.5
